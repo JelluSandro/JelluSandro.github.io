@@ -15,7 +15,7 @@ function getSajest(cityOrAirport) {
         ul.className = "list";
         posLi = 0;
         listSize = 0;
-        fetch('http://autocomplete.travelpayouts.com/places2?term=' +
+        fetch('https://autocomplete.travelpayouts.com/places2?term=' +
             cityOrAirport +
             '&locale=ru&types[]=airport&types[]=city').then(res => res.json()).then(arr => arr.slice(0, 10))
             .then(arr => {
